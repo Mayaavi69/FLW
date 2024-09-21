@@ -1,0 +1,25 @@
+{
+    "name": "Flowise on Heroku",
+    "description": "Deploy Flowise to Heroku",
+    "repository": "https://github.com/Mayaavi69/FLW",
+    "keywords": ["flowise", "ai", "workflow"],
+    "env": {
+    "PORT": {
+        "description": "The port Flowise will run on",
+        "value": "3000"
+    },
+    "FLOWISE_USERNAME": {
+        "description": "Erudites",
+        "required": true
+    },
+    "FLOWISE_PASSWORD": {
+        "description": "Erudites",
+        "required": true
+    }
+},
+"buildpacks": [
+    {
+    "url": "heroku/nodejs"
+    }
+]
+}
